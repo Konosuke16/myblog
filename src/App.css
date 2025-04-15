@@ -1,0 +1,25 @@
+.suzumi {
+  line-height: 1.1;
+  font-size: 5em;
+  color: darkcyan;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50vh;
+  paint-order: stroke;
+}
+
+.suzumi:hover {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
