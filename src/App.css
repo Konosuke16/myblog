@@ -8,10 +8,22 @@
   align-items: center;
   margin-top: 50vh;
   paint-order: stroke;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
-.suzumi:hover {
-  animation: rotate 2s linear infinite;
+@media (hover: hover) {
+  .suzumi:hover {
+    animation: rotate 2s linear infinite;
+  }
+}
+
+@media (hover: none) {
+  .suzumi:active {
+    animation: rotate 2s linear infinite;
+  }
 }
 
 @keyframes rotate {
